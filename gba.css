@@ -1,0 +1,86 @@
+#rainbow-logo body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#rainbow-logo .wrapper {
+  display: table;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+#rainbow-logo .content {
+  display: table-cell;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#rainbow-logo h1{
+  
+  animation: rainbow 4s infinite linear;
+  animation-delay: 1s;
+
+  -webkit-animation: rainbow 4s infinite linear;
+  -webkit-animation-delay: 1s;
+
+  background: -webkit-linear-gradient(0deg, #ffffff 40%, #85e367 40%, #85e367 45%, #ff52e8 45%, #ff52e8 50%, #ff0151 50%, #ff0151 55%, #f9e52e 55%, #f9e52e 60%, #ffffff 60%);
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Asap', sans-serif;
+  font-size: 5em;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: -5px;
+  width: 300px;
+
+  /* Firefox */
+  left: -moz-calc(50% - 150px);
+  /* WebKit */
+  left: -webkit-calc(50% - 150px);
+  /* Opera */
+  left: -o-calc(50% - 150px);
+  /* Standard */
+  left: calc(50% - 150px);
+
+
+  margin-bottom: 0
+  opacity: 1;
+  top: 25%;
+  
+  -webkit-text-stroke: 1.5px black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: skew(-5deg);
+}
+
+#rainbow-logo h2 {
+  color: #ff52e8;
+  font-family: Arial Black, sans-serif;
+  left: 50%;
+  margin-left: -37.5%;
+  text-align: center;
+  position: fixed;
+  width: 75%;
+}
+
+@keyframes rainbow {
+  from {
+    background-position: -600px;
+  }
+  to{
+    background-position: 0px;
+  }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rainbow {
+  from {
+    background-position: -600px;
+  }
+  to{
+    background-position: 0px;
+  }
+} 
